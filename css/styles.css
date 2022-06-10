@@ -1,0 +1,135 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1{
+    font-family: 'Nova Flat';
+    margin-left: 23%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+
+}
+
+#calc-container{
+    padding-top: 5px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid green; */
+    border-radius: 2%;
+    height: 350px;
+    width: 250px;
+
+    /* background-color: #212121; */
+    background-color: #E5E4E2;
+
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#all-buttons{
+
+    
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 193px;
+    /* border: 2px solid pink; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+    .span-2{
+        grid-column: auto /span 2;
+    }
+
+
+#display{
+    cursor: pointer;
+    padding-right: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    line-height: 60px;
+    flex-direction: row-reverse;
+    border: 1px solid #36454F;
+    border-radius: 8px;
+    height: 50px;
+    color: black;
+    background-color: 	#C0C0C0;
+
+    font-weight:bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 1px, rgba(0, 0, 0, 0.09) 0px 1.5px 2px, rgba(0, 0, 0, 0.09) 0px 2px 3px, rgba(0, 0, 0, 0.09) 0px 5px 5px, rgba(0, 0, 0, 0.09) 0px 8px 6px;
+}
+
+.button{
+    height: 32px;
+    cursor: pointer;
+    border: 1px solid black;
+    position: relative;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    /* background-color: ; */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 1px, rgba(0, 0, 0, 0.09) 0px 3px 2px, rgba(0, 0, 0, 0.09) 0px 4px 3px, rgba(0, 0, 0, 0.09) 0px 8px 8px, rgba(0, 0, 0, 0.09) 0px 12px 12px;
+}
+
+#dot{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+#multiply{
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+#clear-button,
+#del{
+    font-size: 12px;
+}
+.button:hover{  
+    background-color: white;
+}
+
+
+.button:active{
+    top: 1px;
+    background-color: #D3D3D3;
+    border: 1px solid #899499 ;
+    font-weight: bolder;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 8px;
+    color: #36454F;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgb(150,100,251);
+    text-transform: uppercase;
+}
+
+.fa-github {
+    color: black;
+    font-size: 10px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 2px rgb(150,100,251);
+    
+}
